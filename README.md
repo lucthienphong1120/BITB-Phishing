@@ -4,7 +4,7 @@ Browser In The Browser (BITB) attack is a sophisticated phishing and hard to det
 
 # Usage
 
-Each folder has a `script.js` file which contains parameters you can change:
+Each folder has a `script.js` file in line 1-10 have some parameters you can change:
 
 `loadTITLE` - The title display when loading (e.g. Sign in)
 `TITLE` - The title that shows up for the page (e.g. Sign in to your account now)
@@ -15,6 +15,7 @@ Each folder has a `script.js` file which contains parameters you can change:
 `PHISHINGLINK` - Phishing link which will be embedded into the iFrame (e.g. https://example.com)
 `loadLOGO` - Path to the icon of the website when loading (default "../loading.gif")
 `LOGO` - Path to the icon of the website you're masquerading (default "../google.svg")
+`loadTIME` - Loading time in milisec (it should be set 0.5-2s to make it more realistic)
 
 # Demo
 
@@ -27,6 +28,7 @@ I want to do:
 - maximize mode that will turn into full screen
 - function enable ssl check
 - appearance effect more realistic
+- detect user color preference
 - fix some css, ...
 
 if you can, feel free to contribute, thanks!

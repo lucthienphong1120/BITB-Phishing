@@ -93,7 +93,7 @@ body {
 }
 
 #content {
-  width: 100%;
+  width: calc(100% + 2px);
   height: 700px;
   border: 1px solid gray;
 }

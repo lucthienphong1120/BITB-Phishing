@@ -133,4 +133,30 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 759px; /* title bar height + content height */
   width: 40%;
+  margin: auto;
+  position: relative;
+  bottom: 2.5%;
+  display: none;
+  animation: scale 0.2s ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#load {
+  background: #111;
+  width: calc(100% + 2px);
+  overflow: hidden;
+}
+
+#content {
+  visibility: hidden;
 }

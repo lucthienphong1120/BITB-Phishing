@@ -150,8 +150,9 @@ body {
 }
 
 #load {
-  background: url(../loading.gif) center center no-repeat;
-  background-size: 10%;
+  background: #eee;
+  width: calc(100% + 2px);
+  overflow: hidden;
 }
 
 #content {

