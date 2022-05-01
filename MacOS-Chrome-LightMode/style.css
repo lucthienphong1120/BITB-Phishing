@@ -90,8 +90,14 @@ body {
 
 #ssl-padlock {
   user-select: none;
-  padding-left: 8px;
-  margin-right: 8px;
+  padding: 4px 8px;
+  margin-right: 2px;
+  border-radius: 25px;
+}
+
+#ssl-padlock:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 #domain-name {
@@ -131,9 +137,8 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 759px; /* title bar height + content height */
   width: 40%;
-  margin: auto;
   position: relative;
-  bottom: 2.5%;
+  top: 0;
   display: none;
   animation: scale 0.2s ease-in-out;
 }
@@ -157,4 +162,62 @@ body {
 
 #content {
   visibility: hidden;
+  margin-left: -1px;
+  margin-bottom: -5px;
+}
+
+#ssl-certificate {
+  position: absolute;
+  z-index: 100;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #ccc;
+  margin-left: 2px;
+  width: 320px;
+  height: 180px;
+  display: none;
+}
+
+.ssl-close {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.domain-verify {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 15px;
+  color: #1f1f1f;
+}
+
+.cert-info {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  color: #555;
+}
+
+.cert-info-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.cert-info-item:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.cert-info-icon {
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.cert-info-icon:hover {
+  cursor: pointer;
+}
+
+.cert-info-name {
+  color: #333;
 }

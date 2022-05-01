@@ -19,10 +19,11 @@ Each folder has a `script.js` file in line 1-10 have some parameters you can cha
 - `loadTITLE` - The title display when loading (e.g. Sign in)
 - `TITLE` - The title that shows up for the page (e.g. Sign in to your account now)
 - `loadDOMAINNAME` - Domain name when loading (default "")
-- `DOMAINNAME` - Domain name you're masquerading. (e.g. gmail.com)
+- `DOMAINNAME` - Domain name you're masquerading. (e.g. "https://accounts.google.com/")
+- `DOMAINNAMEVERIFY` - Domain name appears in ssl check (e.g. "accounts.google.com")
 - `loadDOMAINPATH` - Domain path when loading (default "about:blank")
-- `DOMAINPATH` - Domain path (e.g. /auth/google/login)
-- `PHISHINGLINK` - Phishing link which will be embedded into the iFrame (e.g. https://example.com)
+- `DOMAINPATH` - Domain path (e.g. "/auth/google/login")
+- `PHISHINGLINK` - Phishing link which will be embedded into the iFrame (e.g. "https://example.com")
 - `loadLOGO` - Path to the icon of the website when loading (default "../loading.gif")
 - `LOGO` - Path to the icon of the website you're masquerading (default "../google.svg")
 - `loadTIME` - Loading time in milisec (it should be set 0.5-2s to make it more realistic)
@@ -33,16 +34,24 @@ Each folder has a `script.js` file in line 1-10 have some parameters you can cha
 
 # To Do list
 
+- [x] customize domain and phishing link
 - [ ] maximize mode that will turn into full screen
-- [ ] function enable ssl check
+- [ ] function for minimize button
+- [x] ssl check
+- [ ] ssl certificate check
 - [ ] appearance effect more realistic
 - [ ] detect user color preference
 - [ ] other web platforms
+- [ ] more languages
+- [ ] error page if cant load
+- [ ] responsive
 - [ ] fix some css, animation,...
 
 If you can, feel free to contribute, thanks!
 
 Moreover, you can also contribute ideas to To Do list
+
+> Bonus: you can also contribute more to my [fake google login demo](https://github.com/lucthienphong1120/google-login) repo!
 
 # Detecting Color Preference
 
