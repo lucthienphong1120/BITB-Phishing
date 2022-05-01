@@ -21,15 +21,13 @@ Each folder has a `script.js` file in line 1-10 have some parameters you can cha
 
 ![Demo](/demo.gif)
 
-# To do
+# To do list
 
-I want to do:
-
-- maximize mode that will turn into full screen
-- function enable ssl check
-- appearance effect more realistic
-- detect user color preference
-- fix some css, ...
+- [ ] maximize mode that will turn into full screen
+- [ ] function enable ssl check
+- [ ] appearance effect more realistic
+- [ ] detect user color preference
+- [ ] fix some css, animation,...
 
 if you can, feel free to contribute, thanks!
 
