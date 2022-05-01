@@ -2,6 +2,16 @@
 
 Browser In The Browser (BITB) attack is a sophisticated phishing and hard to detect.
 
+Goto:
+
+👉 https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-DarkMode
+
+👉 https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-LightMode
+
+👉 https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-DarkMode
+
+👉 https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-LightMode
+
 # Usage
 
 Each folder has a `script.js` file in line 1-10 have some parameters you can change:
@@ -21,15 +31,18 @@ Each folder has a `script.js` file in line 1-10 have some parameters you can cha
 
 ![Demo](/demo.gif)
 
-# To do list
+# To Do list
 
 - [ ] maximize mode that will turn into full screen
 - [ ] function enable ssl check
 - [ ] appearance effect more realistic
 - [ ] detect user color preference
+- [ ] other web platforms
 - [ ] fix some css, animation,...
 
-if you can, feel free to contribute, thanks!
+If you can, feel free to contribute, thanks!
+
+Moreover, you can also contribute ideas to To Do list
 
 # Detecting Color Preference
 
