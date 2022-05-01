@@ -4,28 +4,28 @@ Browser In The Browser (BITB) attack is a sophisticated phishing and hard to det
 
 Goto:
 
-👉 https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-DarkMode
+👉 [MacOS-Chrome-DarkMode](https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-DarkMode)
 
-👉 https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-LightMode
+👉 [MacOS-Chrome-LightMode](https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-LightMode)
 
-👉 https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-DarkMode
+👉 [Windows-Chrome-DarkMode](https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-DarkMode)
 
-👉 https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-LightMode
+👉 [Windows-Chrome-LightMode](https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-LightMode)
 
 # Usage
 
 Each folder has a `script.js` file in line 1-10 have some parameters you can change:
 
-`loadTITLE` - The title display when loading (e.g. Sign in)
-`TITLE` - The title that shows up for the page (e.g. Sign in to your account now)
-`loadDOMAINNAME` - Domain name when loading (default "")
-`DOMAINNAME` - Domain name you're masquerading. (e.g. gmail.com)
-`loadDOMAINPATH` - Domain path when loading (default "about:blank")
-`DOMAINPATH` - Domain path (e.g. /auth/google/login)
-`PHISHINGLINK` - Phishing link which will be embedded into the iFrame (e.g. https://example.com)
-`loadLOGO` - Path to the icon of the website when loading (default "../loading.gif")
-`LOGO` - Path to the icon of the website you're masquerading (default "../google.svg")
-`loadTIME` - Loading time in milisec (it should be set 0.5-2s to make it more realistic)
+- `loadTITLE` - The title display when loading (e.g. Sign in)
+- `TITLE` - The title that shows up for the page (e.g. Sign in to your account now)
+- `loadDOMAINNAME` - Domain name when loading (default "")
+- `DOMAINNAME` - Domain name you're masquerading. (e.g. gmail.com)
+- `loadDOMAINPATH` - Domain path when loading (default "about:blank")
+- `DOMAINPATH` - Domain path (e.g. /auth/google/login)
+- `PHISHINGLINK` - Phishing link which will be embedded into the iFrame (e.g. https://example.com)
+- `loadLOGO` - Path to the icon of the website when loading (default "../loading.gif")
+- `LOGO` - Path to the icon of the website you're masquerading (default "../google.svg")
+- `loadTIME` - Loading time in milisec (it should be set 0.5-2s to make it more realistic)
 
 # Demo
 
