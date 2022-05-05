@@ -14,7 +14,7 @@ Goto:
 
 # Usage
 
-Each folder has a `script.js` file, in line 1 have some parameters you can change:
+Each folder has a `script.js` file, the beginning of the file has some parameters you can change:
 
 - `loadTITLE` - The title display when loading (e.g. Sign in)
 - `TITLE` - The title that shows up for the page (e.g. Sign in to your account now)
