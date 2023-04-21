@@ -4,13 +4,13 @@ Browser In The Browser (BITB) attack is a sophisticated phishing and hard to det
 
 Goto:
 
-👉 [MacOS-Chrome-DarkMode](https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-DarkMode)
+👉 [MacOS-Chrome-DarkMode](./MacOS-Chrome-DarkMode)
 
-👉 [MacOS-Chrome-LightMode](https://www.ltp110.tk/BITB-Phishing/MacOS-Chrome-LightMode)
+👉 [MacOS-Chrome-LightMode](./MacOS-Chrome-LightMode)
 
-👉 [Windows-Chrome-DarkMode](https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-DarkMode)
+👉 [Windows-Chrome-DarkMode](./Windows-Chrome-DarkMode)
 
-👉 [Windows-Chrome-LightMode](https://www.ltp110.tk/BITB-Phishing/Windows-Chrome-LightMode)
+👉 [Windows-Chrome-LightMode](./Windows-Chrome-LightMode)
 
 # Usage
 
