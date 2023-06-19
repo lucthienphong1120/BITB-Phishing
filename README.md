@@ -2,6 +2,8 @@
 
 Browser In The Browser (BITB) attack is a sophisticated phishing and hard to detect.
 
+> BITB là hình thức giả mạo trang web phishing nhưng ngay trong trình duyệt pacman tinh vi hơn kết hợp giữa Man-in-the-middle và phishing in browser
+
 Goto:
 
 👉 [MacOS-Chrome-DarkMode](./MacOS-Chrome-DarkMode)
